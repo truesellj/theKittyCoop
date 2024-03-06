@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>The Kitty Co-Op</title>
+    <style>
+        #owners{
+            width: 50%;
+            height:auto;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#menu" ).menu();
+    } );
+    </script>
+    <style>
+    .ui-menu { 
+        width: 190px;
+        background: none;
+        list-style-type: none;
+     }
+    </style>
+</head>
+<body id="homeBody">
+    <div class="mainContent">
+        <div class="flex black">
+            <h1 style="margin-bottom: 0;">Welcome to The Kitty Co-Op!</h1>
+            <ul id="menu">
+                <li><div style="font-family: Arial, Helvetica, sans-serif;font-size: 35px;font-weight: 400;flex-wrap: nowrap;"><strong>(=˃ᆺ˂=)</strong></div>
+                <ul>
+                    <li><div><a href="index.html">Home</a></div></li>
+                    <li><div><a href="adopt.html">Adopt</a></div></li>
+                    <li><div><a href = "contact.html">Contact</a></div></li>
+                </ul>
+            </li>
+            </ul>
+            <div><img id="owners" src="res/us.jpg" style="margin-bottom: 5px;" alt="OwnersStacyAndMacy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tenetur ducimus tempore adipisci, eligendi dolore unde aliquam totam ad? Explicabo labore nemo ad optio illum sunt corrupti ipsa veritatis sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, exercitationem expedita et doloribus molestias cu</div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div class="flex black">
+            <div><img id="scaredyCat" src="res/kittyWet.jpg" style="margin-bottom: 5px;" alt="An Unhappy Kitty"><div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tenetur ducimus tempore adipisci, eligendi dolore unde aliquam totam ad? Explicabo labore nemo ad optio illum sunt corrupti ipsa veritatis sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, exercitationem expedita et doloribus molestias cu<hr><h2 style="text-align: center;">A message From the <br> Owners </h2><iframe width="45%" margin="5px" height="auto" src="https://www.youtube.com/embed/Cad6-WalvXg" title="Whiskers R We with Reese Witherspoon - SNL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+        </div>
+        <iframe src='https://widgets.sociablekit.com/rss-feed/iframe/25375349' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    <script>
+        const username = prompt("Please enter your username: ");
+        const password =  prompt("Please enter your password: ");
+
+        if(username == "truesellj"){
+            if(password == "password"){
+                const showThis = document.getElementById("homeBody");
+                showThis.style.display = "initial";
+                /*** Old Code, but only worked on some content, not all ***
+                const showThis = document.getElementsByClassName("mainContent");
+                console.log(showThis);
+                for(let i = 0; i < showThis.length;i++){
+                    showThis[i].style.display="inherit";
+                }*/
+            }
+            else{
+                alert("Wrong username or password");
+            }
+        }
+    </script>
+</body>
+</html>

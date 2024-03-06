@@ -1,0 +1,130 @@
+#adoptBody{
+    background-image: url("res/tabby.jpg");
+}
+.black{
+    /* Set background color w/ opacity w/o affecting opacity of the font */
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 1%;
+    color:white;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: middle;
+}
+#contactBody{
+    background-image: url("res/persian.jpg");
+    /* The following was an test to see if this would indeed
+    hide the whole body of the code > successful
+    display: none; */
+}
+#contactForm{}
+.dropbtn{
+    background-color:inherit;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+}
+.flex{
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    margin-left:25%;
+    margin-right:25%;
+    text-align: center;
+    background-color: rgba(255,192,203,0.7);
+}
+#homeBody{
+    background-image: url("res/furHome.png");
+    display: none;
+}
+img{
+    margin:5px;
+}
+.mainContent{
+    padding-left: 25%;
+    padding-right: 25%;
+    height:auto;
+    width:inherit;
+    margin:5px auto;
+}
+#myGrid{
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+    margin-left:25%;
+    margin-right:25%;
+    justify-content: space-around;
+}
+#myGrid img{
+    max-width: auto;
+    max-height: 50%
+}
+#myGrid div{
+    grid-row:span 1;
+    grid-column:span 1;
+    justify-content: center;
+    text-align: center;
+
+}
+.options{
+    position:relative;
+    display:inline-block;
+}
+.options:hover .options-content{
+    display:block;
+}
+.options:hover .dropbtn{
+    background-color: white;
+}
+.options-content{
+    display:none;
+    position:absolute;
+    background-color: inherit;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+
+}
+.options-content div{
+    color:black;
+    padding:12px 16px;
+    display:block;
+}
+.options-content div:hover{
+    background-color: pink;
+}
+
+#owners{
+    position: relative;
+    float:left;
+    width:50%;
+
+}
+.persian{
+    background-color:rgba(255,192, 203, 0.7);
+    border-radius:3%;
+    color:black;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: middle;
+}
+#scaredyCat{
+    position:relative;
+    float: right;
+    width:50%;
+}
+.tabby{
+    background-color: gray;
+    border-radius: 2%;
+    color:black;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: middle;
+}
+

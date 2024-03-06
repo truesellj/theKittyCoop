@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Kitty Co-Op - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#menu" ).menu();
+    } );
+    </script>
+    <style>
+    .ui-menu { 
+        width: 190px;
+        background: none;
+        list-style-type: none;
+        border-color:none;
+     }
+    </style>
+</head>
+<body id="contactBody">
+    <div class="mainContent">
+        <div class="persian flex">
+            <ul id="menu">
+                <li><div style="font-family: Arial, Helvetica, sans-serif;font-size: 35px;font-weight: 400;flex-wrap: nowrap;"><strong>^.ᆽ.^= ∫</strong></div>
+                <ul>
+                    <li><div><a href="index.html">Home</a></div></li>
+                    <li><div><a href="adopt.html">Adopt</a></div></li>
+                    <li><div><a href = "contact.html">Contact</a></div></li>
+                </ul>
+            </li>
+            </ul>
+            <h1>Contact Us:</h1>
+            <form id="contactForm">
+                <input id="fName" type="text" placeholder="First Name">
+                <input id ="lName" type="text" placeholder="Last Name">
+                <input id ="tel" type="tel" placeholder="Phone Number">
+                <input id ="email" type="email" placeholder="Email">
+                <input id = "date" type="date" placeholder="Best day to reach out">
+                <div class="options">
+                    <button class="dropbtn">Preferred<br>Contact Method</button>
+                    <div class="options-content">
+                        <div onClick="setContactMethod(1)">Phone</div>
+                        <div onClick="setContactMethod(2)">E-mail</div>
+                    </div>
+                </div>
+                <input type="submit" value="Send" onclick="confirmWithUser()">
+            </form>
+            <label>Hours of Operation:</label>
+            <table>
+                <tr><td>Monday</td><td>7am - 4pm PST</td></tr>
+                <tr><td>Tuesday</td><td>7am - 4pm PST</td></tr>
+                <tr><td>Wednesday</td><td>7am - 4pm PST</td></tr>
+                <tr><td>Thursday</td><td>7am - 4pm PST</td></tr>
+                <tr><td>Friday</td><td>7am - 4pm PST</td></tr>
+                <tr><td>Saturday</td><td>[Closed]</td></tr>
+                <tr><td>Sunday</td><td>[Closed]</td></tr>
+            </table>
+        </div>
+    </div>
+    <p id="footer">The Kitty Co-Op<br>9 Lives Ln<br>Tiger,TX </p>
+</body> 
+</html>
